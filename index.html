@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <!-- header  -->
+            <div class="header">
+                <div class="userimg">
+                    <img src="https://images.unsplash.com/photo-1561347981-969c80cf4463?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="" class="cover">
+                </div>
+                <ul class="nav_icons">
+                    <a href="status1.html"><li><ion-icon name="scan-circle-outline"></ion-icon></li></a>
+                    <li><ion-icon name="chatbox"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical" onclick="settingmenu()"></ion-icon></li>
+                </ul>
+
+                <div class="settingmenu" id="settingmenu1">
+                    <ul id="menu-box">
+                        <li>New Group</li>
+                        <li>Starred Message</li>
+                        <li>Setting</li>
+                        <li>Logout</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- search  -->
+            <div class="search_chat">
+                <div>
+                   <input type="text" placeholder="Search or start new chat">
+                   <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+
+            <!-- chat list  -->
+
+            <div class="chatlist">
+                <div class="block active">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Mehar Middha</h4>
+                            <p class="time">10:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Humara Toh Systumm hai😏</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Komal Sharma</h4>
+                            <p class="time">09:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Listening Music🎶</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Komal Singh</h4>
+                            <p class="time">10:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Be Valuable,Not Available😉</p>
+                            <b>3</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Kishidha</h4>
+                            <p class="time">09:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Why chase you when i'm the catch😙</p>
+                            <b>6</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Nidhi Garg</h4>
+                            <p class="time">10:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>TAKE IT EASY!!😏</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1812&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Jatin Wadhwa</h4>
+                            <p class="time">09:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Google Maps said it's my turn!</p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1589696485114-9e2f81d83484?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Manmeet Kaur</h4>
+                            <p class="time">10:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Pretty Me😙</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1599044368810-238581bb322b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1957&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Mukul Sharma</h4>
+                            <p class="time">09:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Travelling🌄</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1542295856-082da537cda4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Mehak Walia</h4>
+                            <p class="time">10:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>It's the vibe which matters❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block unread">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1612469294274-b1baaf5125ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="" class="cover">
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Kriti Pandey</h4>
+                            <p class="time">09:56</p>
+                        </div>
+                        <div class="message_p">
+                            <p>if you are looking for a sign, here it is✅</p>
+                            <b>5</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightSide">
+            <div class="header">
+                <div class="imgText">
+                    <div class="userimg">
+                        <img src="https://images.unsplash.com/photo-1561347981-969c80cf4463?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="" class="cover">
+                    </div>
+                    <h4>Mehar Middha<br><span>online</span></h4>
+                </div>
+                <ul class="nav_icons">
+                    <li><ion-icon name="search-outline"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical" onclick="setting()"></ion-icon></li>
+                </ul>
+                <div class="setting" id="setting">
+                    <ul id="menu">
+                        <li>Contact info</li>
+                        <li>Select messages</li>
+                        <li>Close chat</li>
+                        <li>Mute notifications</li>
+                        <li>Disappearing messages</li>
+                        <li>Clear messages</li>
+                        <li>Delete chat</li>
+                        <li>Report</li>
+                        <li>Block</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- chatbox -->
+            <div class="chatBox" id="chatBox">
+                <div class="message my_message">
+                    <p class="sendPara">Hi<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">Hello<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">How's you ??<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">I am Fine How About You<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">I am Good Too . What are you doing Now a days ??<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">I am currently persuing BTech Computer Science Engineering from Chitkara University .. How about you ??<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">I am Working under an project of front enmd engineering assigned by my sir .. I want to give my best to show them my skills so i am preparing day and night to stand out of the crowd.<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">I am very sure of that , You have the potential to do it<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">Thanks bro ..❤️<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">Welcome buddy.<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">How are you doing in Chitkara University ?<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">I am in 3rd year after few months we have placements going on i just wish to get well placed and well settled<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">Dont worry you will get succeed its all about a matter of days then you are gonna tell me i am placed<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">Thanks broo❤️<span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message my_message">
+                    <p class="sendPara">It felt to good to have a little chit chat with you.. see you soon.. bye <span class="sendTime">12:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p class="sendPara">me too .. hope we meet soon .. bye<span class="sendTime">12:15</span></p>
+                </div>
+            </div>
+
+            <!-- chatbox_input  -->
+
+            <div class="chatbox_input">
+                <ion-icon name="happy-outline"></ion-icon>
+                <ion-icon name="attach-outline"></ion-icon>
+                <input type="text" placeholder="Type a message" class="sendMessage"  id="send">
+                <ion-icon name="send" onclick="sendMessage()"></ion-icon>
+                <ion-icon name="mic"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+<script src="script.js"></script>  
+</body>
+</html>
