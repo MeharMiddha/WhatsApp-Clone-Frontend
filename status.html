@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="status.css">
+    <style>
+        /* Add your CSS styles here */
+        .selected-image-container {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+           background-color: transparent;
+            padding: 10px;
+            border: none;
+            box-shadow: 0 0 10px rgba(33, 32, 32, 0.1);
+            z-index: 999;
+        }
+
+        .selected-image-container img {
+            max-width: 37%;
+            margin-left:42%;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="all-status">
+        <!-- Left Section -->
+        <!-- ... (your existing left section code) ... -->
+        <div id="left-status">
+            <section class="left-head-status">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2459&q=80" alt="user">
+                <div>
+                    <h4>
+                        My Status
+                    </h4>
+                    <p>
+                        No Updates
+                    </p>
+                </div>
+            </section>
+            <section class="left-status-recent">
+                <div class="seprator">
+                    <p>
+                        viewed
+                    </p>
+                </div>
+                <!-- Inside the left-status-recent section -->
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1539125530496-3ca408f9c2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1539125530496-3ca408f9c2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Mehar Middha</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+  
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Komal Sharma</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+                <div class="statuses" onclick="openRightSide('https://plus.unsplash.com/premium_photo-1667243218416-589c5e97f7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2786&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://plus.unsplash.com/premium_photo-1667243218416-589c5e97f7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2786&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Kishidha</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+ 
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2124&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2124&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Komal Singh</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+ 
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Nidhi Garg</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+ 
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1727&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1727&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Manmeet Kaur</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+ 
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Mehak Walia</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+                <div class="statuses" onclick="openRightSide('https://plus.unsplash.com/premium_photo-1673957923985-b814a9dbc03d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://plus.unsplash.com/premium_photo-1673957923985-b814a9dbc03d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Kriti Pandey</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Mukul Sharma</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Navish Singla</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+                <div class="statuses" onclick="openRightSide('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80', 'John Doe')">
+                    <div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="user">
+                    </div>
+                    <div>
+                    <h4>Nikhil Bajwa</h4>
+                    <p>today at 15:04 AM</p>
+                    </div>
+                </div>
+                                                                                 
+            </section>
+        </div>
+
+        <!-- Right Section -->
+        <div id="right-status" id="rightStatus">
+            <div class="selected-image-container" id="selectedImageContainer">
+                <span class="close-button" onclick="closeSelectedImage()">&times;</span>
+                <img src="" alt="Selected User">
+                <h4></h4>
+            </div>
+            <script>
+                function openRightSide(imageSrc, name) {
+                    const selectedImageContainer = document.getElementById('selectedImageContainer');
+                    const selectedImage = selectedImageContainer.querySelector('img');
+                    const selectedName = selectedImageContainer.querySelector('h4');
+                    var newHeight = 35; // Set the new height in pixels
+                    selectedImage.style.height = newHeight + "%";
+                    selectedImage.src = imageSrc;
+                    selectedName.textContent = name;
+                    selectedImageContainer.style.display = 'block';
+                }
+
+                function closeSelectedImage() {
+                    const selectedImageContainer = document.getElementById('selectedImageContainer');
+                    selectedImageContainer.style.display = 'none';
+                }
+            </script>
+
+            <!-- ... (your existing right section code) ... -->
+            <div class="objects" >
+                <span data-testid="status-v3-placeholder" data-icon="status-v3-placeholder" class=""><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80"><path fill="currentColor" d="M30.566 78.982c-.222 0-.447-.028-.672-.087C12.587 74.324.5 58.588.5 40.631c0-3.509.459-6.989 1.363-10.343a2.625 2.625 0 0 1 5.068 1.366 34.505 34.505 0 0 0-1.182 8.977c0 15.578 10.48 29.226 25.485 33.188a2.625 2.625 0 0 1-.668 5.163zm19.355-.107C67.336 74.364 79.5 58.611 79.5 40.563c0-3.477-.452-6.933-1.345-10.27a2.624 2.624 0 1 0-5.071 1.356 34.578 34.578 0 0 1 1.166 8.914c0 15.655-10.545 29.319-25.646 33.23a2.625 2.625 0 0 0 1.317 5.082zM15.482 16.5C21.968 9.901 30.628 6.267 39.867 6.267c9.143 0 17.738 3.569 24.202 10.05a2.625 2.625 0 0 0 3.717-3.708C60.329 5.135 50.413 1.018 39.867 1.018c-10.658 0-20.648 4.191-28.128 11.802a2.624 2.624 0 1 0 3.743 3.68z"></path></svg></span>
+                <div>
+                    Click on a contact to view their status updates
+                </div>
+                <span>
+                    <a href="index.html#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19.8 5.8l-1.6-1.6-6.2 6.2-6.2-6.2-1.6 1.6 6.2 6.2-6.2 6.2 1.6 1.6 6.2-6.2 6.2 6.2 1.6-1.6-6.2-6.2 6.2-6.2z"></path></svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
