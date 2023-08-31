@@ -48,5 +48,31 @@ function setting() {
 
     }
 }
+// Get the modal element and the modal image
+const modal = document.getElementById('imageModal');
+const modalImage = document.getElementById('modalImage');
+
+// Function to open the modal with the clicked image
+function openModal(imageUrl) {
+  modal.style.display = 'block';
+  modalImage.src = imageUrl;
+}
+
+// Close the modal when clicking on the close button or outside the modal
+const closeModal = document.getElementById('closeModal');
+window.addEventListener('click', event => {
+  if (event.target === modal || event.target === closeModal) {
+    modal.style.display = 'none';
+  }
+});
+
+// Attach click event to each profile image
+const profileImages = document.querySelectorAll('.userimg img');
+profileImages.forEach(image => {
+  image.addEventListener('click', function () {
+    const imageUrl = image.src;
+    openModal(imageUrl);
+  });
+});
 
 
